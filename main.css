@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: #252526;
+    min-height: 100vh;
+    min-width: 100%;
+}
+
+body::-webkit-scrollbar {
+    width: 15px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #3c3c3c;
+    outline: none;
+    border-radius: 5px;
+}
+
+h1 {
+    color: #3c3c3c;
+    font-size: 48px;
+    font-weight: 600;
+    margin-left: 2%;
+    align-self: center;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 200px);
+    padding: 24px;
+    gap: 24px;
+    background-color: #1e1e1e;
+    margin: 0% 2% 2% 2%;
+    box-shadow: inset 0px 0px 30px 30px rgba(0, 0, 0, 0.4);
+    border-radius: 25px;
+    justify-content: center;
+    height: 90vh;
+    overflow-y: auto;
+}
+
+.container::-webkit-scrollbar {
+    width: 5px;
+}
+ 
+.container::-webkit-scrollbar-thumb {
+    background-color: #3c3c3c;
+    outline: none;
+    border-radius: 10px;
+}
+
+.container::-webkit-scrollbar-track-piece:start {
+    margin-top: 15px;
+}
+
+.container::-webkit-scrollbar-track-piece:end {
+    margin-bottom: 15px;
+}
+
+.note {
+    height: 200px;
+    box-sizing: border-box;
+    padding: 16px;
+    background-color: yellow;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.15);
+    resize: none;
+}
+
+.add-note {
+    background: none;
+    font-size: 96px;
+    font-weight: bold;
+    height: 200px;
+    border: dashed;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.add-note:hover {
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.title {
+    position: relative;
+    background: none;
+    resize: none;
+    border: none;
+    margin: 0;
+    width: 100%;
+    overflow: hidden;
+    font-size: 24px;
+}
+
+.text {
+    background: none;
+    resize: none;
+    border: none;
+    margin: 0;
+    width: 100%;
+    height: 80%;
+
+}
+
+hr {
+    margin-top: 0;
+    border: none;
+    border-top: 1px solid #000000;
+}
+
